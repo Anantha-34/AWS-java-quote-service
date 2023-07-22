@@ -31,3 +31,22 @@ pipeline:
             spec: {}
             type: Cloud
         type: CI
+    - stage:
+        name: approval
+        identifier: approval
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Email
+                  name: Email_1
+                  identifier: Email_1
+                  spec:
+                    to: ananthu.narayanan@gmail.com
+                    cc: ""
+                    subject: please approve
+                    body: please approve
+                  timeout: 10m
+        tags: {}

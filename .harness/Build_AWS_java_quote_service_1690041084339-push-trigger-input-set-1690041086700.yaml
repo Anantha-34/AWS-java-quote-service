@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_AWS_java_quote_service_1690041084339-push-trigger-input-set
+  identifier: Build_AWS_java_quote_service_1690041084339pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_AWS_java_quote_service_1690041084339
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>

@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_AWS_java_quote_service_1690041084339-pr-trigger-input-set
+  identifier: Build_AWS_java_quote_service_1690041084339prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_AWS_java_quote_service_1690041084339
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
